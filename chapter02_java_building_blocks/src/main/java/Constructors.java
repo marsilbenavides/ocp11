@@ -4,7 +4,7 @@ public class Constructors {
     System.out.println("@Static initializer 1.");
   }
 
-  private final int finalInt;
+  private int finalInt;
 
   static {
     System.out.println("@Static initializer 2.");
@@ -47,6 +47,7 @@ public class Constructors {
 
   {
     System.out.println("@Instance initializer 4 (this.notFinalInt=" + this.notFinalInt + ").");
+    System.out.println("@Instance initializer 4 (finalInt=" + finalInt + ").");
   }
 
 }
